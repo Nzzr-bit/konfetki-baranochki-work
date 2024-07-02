@@ -7,7 +7,17 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      montserrat: ["Montserrat", "sans-serif"],
+    },
     extend: {
+      colors: {
+        mainRed: "#E52729",
+        mainRedActive: "#B81516",
+        ultraLightGrey: "#F4F4F4",
+        black: "#1D1D1B",
+        redActive: "#ED6869",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
