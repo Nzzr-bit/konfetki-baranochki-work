@@ -1,6 +1,11 @@
-import { Header } from "@/components";
+import { Header, Hero, WhyUs } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
-  return <main className="overflow-hidden bg-white"></main>;
+  return (
+    <main className="flex-1  bg-white">
+      <Hero />
+      <WhyUs />
+    </main>
+  );
 }

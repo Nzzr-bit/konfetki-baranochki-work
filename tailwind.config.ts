@@ -10,7 +10,24 @@ const config: Config = {
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
     },
+    fontSize: {
+      xl: ["70px", "78px"],
+      base: ["20px", "28px"],
+    },
+    container: {
+      screens: {
+        sm: "100%",
+        md: "688px",
+        lg: "928px",
+        xl: "1210px",
+        "2xl": "1408px",
+      },
+      padding: "16px",
+    },
     extend: {
+      padding: {
+        button: "16px 134px",
+      },
       colors: {
         mainRed: "#E52729",
         mainRedActive: "#B81516",
