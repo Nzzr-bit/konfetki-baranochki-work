@@ -13,6 +13,10 @@ const config: Config = {
     fontSize: {
       xl: ["70px", "78px"],
       base: ["20px", "28px"],
+      lg: ["48px", "64px"],
+      s: ["18px", "28px"],
+      m: ["24px", "32px"],
+      lg1: ["40px", "53px"],
     },
     container: {
       screens: {
