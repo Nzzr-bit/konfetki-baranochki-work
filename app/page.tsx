@@ -1,4 +1,4 @@
-import { Guarantees, Header, Hero, WhyUs } from "@/components";
+import { AnimateSale, Guarantees, Header, Hero, WhyUs } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <WhyUs />
       <Guarantees />
+      <AnimateSale />
     </main>
   );
 }

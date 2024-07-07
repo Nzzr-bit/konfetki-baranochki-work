@@ -17,6 +17,7 @@ const config: Config = {
       s: ["18px", "28px"],
       m: ["24px", "32px"],
       lg1: ["40px", "53px"],
+      xxl: ["96px", "100px"],
     },
     container: {
       screens: {
@@ -29,6 +30,23 @@ const config: Config = {
       padding: "16px",
     },
     extend: {
+      boxShadow: {
+        xl: "inset 2px 2px 25px 2px rgba(0, 0, 0, 0.20)",
+      },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
       padding: {
         button: "16px 134px",
       },
