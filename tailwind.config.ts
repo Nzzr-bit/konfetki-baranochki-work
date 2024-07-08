@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+// Сделать для каждой кнопки свой паддинг!
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -18,6 +18,7 @@ const config: Config = {
       m: ["24px", "32px"],
       lg1: ["40px", "53px"],
       xxl: ["96px", "100px"],
+      ml: ["30px", "28px"],
     },
     container: {
       screens: {
@@ -51,11 +52,11 @@ const config: Config = {
         button: "16px 134px",
       },
       colors: {
-        mainRed: "#E52729",
-        mainRedActive: "#B81516",
-        ultraLightGrey: "#F4F4F4",
+        "main-red": "#E52729",
+        "main-red-active": "#B81516",
+        "ultra-light-grey": "#F4F4F4",
         black: "#1D1D1B",
-        redActive: "#ED6869",
+        "red-active": "#ED6869",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

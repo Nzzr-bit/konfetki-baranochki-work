@@ -3,7 +3,7 @@ import React from "react";
 
 export function Guarantees() {
   return (
-    <div className=" bg-mainRed mb-36">
+    <div className=" bg-main-red mb-36">
       <div className="container mx-auto">
         <h2 className="text-lg1 font-bold mb-16 pt-16 text-white">
           мы гарантируем

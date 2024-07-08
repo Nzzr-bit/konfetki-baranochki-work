@@ -4,13 +4,13 @@ import React from "react";
 export const WhyUs = () => {
   return (
     <div className="container mx-auto mb-36">
-      <h1 className="text-xl font-bold mb-14 ">почему с нами</h1>
+      <h2 className="text-xl font-bold mb-14 ">почему с нами</h2>
       <div className="mx-auto grid grid-cols-2 gap-x-20 ">
         <div>
-          <h2 className="text-lg font-semibold italic mb-6">
+          <h3 className="text-lg font-semibold italic mb-6">
             Наша главная <br />
             ценность – люди. 
-          </h2>
+          </h3>
           <p className="text-s mb-6 font-medium">
             В кулинариях Конфетки-бараночки мы верим, что душевность и
             внимательность к каждому человеку — основа нашей жизни. Мы создаем

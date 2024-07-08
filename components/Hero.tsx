@@ -6,8 +6,8 @@ export const Hero = () => {
     <div className="container mx-auto flex  mt-10 gap-x-8 mb-36 items-start">
       <div className="">
         <h1 className="text-xl font-bold">
-          айда к нам! мы готовим <span className="text-mainRed">успех,</span>{" "}
-          выпекаем <span className="text-mainRed">возможности!</span>
+          айда к нам! мы готовим <span className="text-main-red">успех,</span>{" "}
+          выпекаем <span className="text-main-red">возможности!</span>
         </h1>
         <p className="text-base my-4">
           Приглашаем на работу в любимую сеть кулинарий "Конфетки- Бараночки!"

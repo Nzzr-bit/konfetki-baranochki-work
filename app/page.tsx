@@ -1,4 +1,12 @@
-import { AnimateSale, Guarantees, Header, Hero, WhyUs } from "@/components";
+import {
+  AnimateSale,
+  Guarantees,
+  Header,
+  Hero,
+  KnowUs,
+  Vacancies,
+  WhyUs,
+} from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,6 +16,8 @@ export default function Home() {
       <WhyUs />
       <Guarantees />
       <AnimateSale />
+      <Vacancies />
+      <KnowUs />
     </main>
   );
 }
