@@ -4,7 +4,7 @@ import SlickSlider from "./modules/SlickSlider";
 export function Vacancies() {
   return (
     <div
-      className="container mx-auto  mb-36
+      className="container mx-auto  mb-36 relative overflow-hidden
     ">
       <SlickSlider />
       <button className="rounded-md text-base p-button bg-main-red text-white mb-5">

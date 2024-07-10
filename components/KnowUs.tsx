@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export function KnowUs() {
@@ -13,10 +14,37 @@ export function KnowUs() {
           height={560}
           className="mr-8"
         />
-        <div className="">
-          <button className="px-33 bg-main-red">22</button>
-          <button className="px-33 bg-main-red">22</button>
-          <button className="px-33 bg-main-red">22</button>
+        <div className="w-full">
+          <Link className="mb-7  link-social w-full" href="">
+            <Image
+              src="/IconTG.svg"
+              alt="Телеграмм"
+              width={40}
+              height={30}
+              className="mr-3"
+            />
+            <p>Telegram</p>
+          </Link>
+          <Link className="mb-7  link-social w-full" href="">
+            <Image
+              src="/IconVK.svg"
+              alt="Вконтакте"
+              width={40}
+              height={40}
+              className="mr-3"
+            />
+            <p>ВКонтакте</p>
+          </Link>
+          <Link className="  link-social w-full" href="">
+            <Image
+              src="/IconOK.svg"
+              alt="Одноклассники"
+              width={30}
+              height={30}
+              className="mr-3"
+            />
+            <p>Одноклассники</p>
+          </Link>
         </div>
       </div>
     </div>
