@@ -47,7 +47,7 @@ const slides = [
 
 function SlickSlider() {
   return (
-    <div className="relative mb-12  -mr-60  overflow-hidden">
+    <div className="relative mb-12 -mr-60 pl-20 ">
       <Swiper
         spaceBetween={28}
         slidesPerView={4}
@@ -72,7 +72,7 @@ function SlickSlider() {
                   width={460}
                   height={640}
                   alt={slide.alt}
-                  className="pt-28"
+                  className="pt-28 "
                 />
                 <h4 className="absolute top-10 left-9 text-m font-bold">
                   {slide.title}
