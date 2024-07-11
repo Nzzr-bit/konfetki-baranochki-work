@@ -1,9 +1,13 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { useModal } from "./store/ModalContext";
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
+  const { showModal } = useModal();
+
   return (
-    <div className="container mx-auto flex  mt-10 gap-x-8 mb-36 items-start">
+    <div className="container mx-auto flex mt-10 gap-x-8 mb-36 items-start">
       <div className="">
         <h1 className="text-xl font-bold">
           Айда к нам! мы готовим <span className="text-main-red">успех,</span>{" "}
@@ -15,8 +19,10 @@ export const Hero = () => {
           поколение! Сохраняем традиции с 1956г. и динамично развиваемся с
           заботой о вас!
         </p>
-        <button className="rounded-md text-base p-button bg-black text-white">
-          Заполнить анекту
+        <button
+          onClick={showModal}
+          className="rounded-md text-base p-button bg-black text-white">
+          Заполнить анкету
         </button>
       </div>
       <Image

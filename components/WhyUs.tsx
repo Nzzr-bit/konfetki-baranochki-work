@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { useModal } from "./store/ModalContext";
 
 export const WhyUs = () => {
+  const { showModal } = useModal();
   return (
     <div className="container mx-auto mb-36">
       <h2 className="text-xl font-bold mb-14 ">почему с нами</h2>
@@ -23,7 +26,9 @@ export const WhyUs = () => {
             профессионализмом, чтобы каждый день делать мир немного вкуснее и
             радостнее.
           </p>
-          <button className="rounded-md text-base p-button bg-black text-white">
+          <button
+            className="rounded-md text-base p-button bg-black text-white"
+            onClick={showModal}>
             Заполнить анекту
           </button>
         </div>

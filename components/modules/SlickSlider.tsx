@@ -1,5 +1,4 @@
 "use client";
-import React, { useRef } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -47,7 +46,7 @@ const slides = [
 
 function SlickSlider() {
   return (
-    <div className="relative mb-12 -mr-60 pl-20 ">
+    <div className="relative mb-12 -mr-60  ">
       <Swiper
         spaceBetween={28}
         slidesPerView={4}
@@ -81,11 +80,11 @@ function SlickSlider() {
             )}
           </SwiperSlide>
         ))}
-        <button className="swiper-button-next absolute top-1/2 left-3/4 z-10 ">
+        <button className="swiper-button-next absolute top-1/2 right-[280px] z-10 ">
           <Image
             src="/IconSliderArrow.svg"
-            width={48}
-            height={48}
+            width={50}
+            height={50}
             alt="arrow"
             className=""
           />
