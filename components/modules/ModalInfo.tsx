@@ -25,7 +25,7 @@ export const ModalInfo = ({ slide, onClose }: ModalInfoProps) => {
       onClick={onClose}>
       <div className="w-[540px]" onClick={(e) => e.stopPropagation()}>
         <div className="bg-white py-[50vh] relative">
-          <button onClick={onClose} className=" right-4">
+          <button onClick={onClose} className=" ">
             <Image src="/ModalClose.svg" width={44} height={2} alt="arrow" />
           </button>
           <div className={`grid mx- ${slide.color}`}>
@@ -33,16 +33,16 @@ export const ModalInfo = ({ slide, onClose }: ModalInfoProps) => {
             <Image
               src={slide.src}
               width={340}
-              height={440}
+              height={340}
               alt={slide.alt}
-              className="pt-9 pl-24"
+              className=""
             />
-            <button
-              onClick={showModal}
-              className="rounded-md text-base p-button bg-black text-white mt-8">
-              Заполнить анкету
-            </button>
           </div>
+          <button
+            onClick={showModal}
+            className="rounded-md text-base p-button bg-black text-white mt-8">
+            Заполнить анкету
+          </button>
         </div>
       </div>
     </div>

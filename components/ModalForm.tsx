@@ -36,7 +36,7 @@ export const ModalForm = () => {
           <button onClick={hideModal} className="ml-20 mb-10">
             <Image src="/ModalClose.svg" width={44} height={2} alt="arrow" />
           </button>
-          <div className="grid mx-32">
+          <div className="grid ml-36 mr-24">
             <h4 className="text-ml font-bold mb-5">Отклик на вакансию</h4>
             <Form onSubmit={onSubmit} />
           </div>

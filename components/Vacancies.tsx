@@ -21,7 +21,7 @@ export function Vacancies() {
       <SlickSlider onButtonClick={handleButtonClick} />
 
       <p className="text-base pt-3 font-medium">
-        Полный перечень вакансий на
+        Полный перечень вакансий на 
         <a href="" className="text-main-red underline">
           hh.ru
         </a>
