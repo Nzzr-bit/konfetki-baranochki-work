@@ -1,11 +1,22 @@
 "use client";
 import Image from "next/image";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
 import "swiper/css";
 
-const slides = [
+interface Slide {
+  src: string;
+  alt: string;
+  title: string;
+  color: string;
+}
+
+interface SlickSliderProps {
+  onButtonClick: (slide: Slide) => void;
+}
+
+const slides: Slide[] = [
   {
     src: "/VacancyConf.png",
     alt: "кондитерское дело",
@@ -44,43 +55,43 @@ const slides = [
   },
 ];
 
-function SlickSlider() {
+function SlickSlider({ onButtonClick }: SlickSliderProps) {
+  const [activeSlide, setActiveSlide] = useState<Slide>(slides[0]);
+
+  const handleSlideChange = (swiper: any) => {
+    setActiveSlide(slides[swiper.realIndex]);
+  };
+
   return (
-    <div className="relative mb-12 -mr-60  ">
+    <div className="relative mb-1 -mr-60">
       <Swiper
         spaceBetween={28}
         slidesPerView={4}
         loop={true}
-        className=""
+        className="absolute right-0 top-0 w-[calc(100%+240px)]"
         modules={[Navigation]}
+        onSlideChange={handleSlideChange}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prew",
         }}>
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            {({ isActive }) => (
-              <div
-                className={`${
-                  slide.color
-                } relative transition-transform duration-300 ease-in-out transform ${
-                  isActive ? "scale-105" : "scale-90"
-                }`}>
-                <Image
-                  src={slide.src}
-                  width={460}
-                  height={640}
-                  alt={slide.alt}
-                  className="pt-28 "
-                />
-                <h4 className="absolute top-10 left-9 text-m font-bold">
-                  {slide.title}
-                </h4>
-              </div>
-            )}
+            <div className={`${slide.color} relative`}>
+              <Image
+                src={slide.src}
+                width={460}
+                height={640}
+                alt={slide.alt}
+                className="pt-28"
+              />
+              <h4 className="absolute top-10 left-9 text-m font-bold">
+                {slide.title}
+              </h4>
+            </div>
           </SwiperSlide>
         ))}
-        <button className="swiper-button-next absolute top-1/2 right-[280px] z-10 ">
+        <button className="swiper-button-next absolute top-1/2 right-[500px] z-10">
           <Image
             src="/IconSliderArrow.svg"
             width={50}
@@ -90,6 +101,11 @@ function SlickSlider() {
           />
         </button>
       </Swiper>
+      <button
+        className="rounded-md text-base p-button bg-main-red text-white mt-8"
+        onClick={() => onButtonClick(activeSlide)}>
+        Заполнить анкету
+      </button>
     </div>
   );
 }

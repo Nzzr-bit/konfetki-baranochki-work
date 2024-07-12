@@ -31,12 +31,12 @@ export const ModalForm = () => {
     <div
       className="fixed inset-0 bg-black bg-opacity-25 z-20 flex justify-end items-center"
       onClick={hideModal}>
-      <div className="w-[840px]" onClick={(e) => e.stopPropagation()}>
+      <div className="w-[740px]" onClick={(e) => e.stopPropagation()}>
         <div className="bg-white py-[50vh] relative">
           <button onClick={hideModal} className="ml-20 mb-10">
             <Image src="/ModalClose.svg" width={44} height={2} alt="arrow" />
           </button>
-          <div className="grid mr-36 ml-36">
+          <div className="grid mx-32">
             <h4 className="text-ml font-bold mb-5">Отклик на вакансию</h4>
             <Form onSubmit={onSubmit} />
           </div>
