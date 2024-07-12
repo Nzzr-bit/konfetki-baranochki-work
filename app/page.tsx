@@ -1,7 +1,6 @@
 import {
   AnimateSale,
   Guarantees,
-  Header,
   Hero,
   KnowUs,
   Vacancies,
