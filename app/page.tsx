@@ -7,7 +7,7 @@ import {
   Vacancies,
   WhyUs,
 } from "@/components";
-import { ModalForm } from "@/components/modules/ModalForm";
+import { ModalForm } from "@/components/ModalForm";
 import { ModalProvider } from "@/components/store/ModalContext";
 
 export default function Home() {
