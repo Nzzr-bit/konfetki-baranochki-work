@@ -50,7 +50,7 @@ export const ModalForm = () => {
         onClick={(e) => e.stopPropagation()}>
         <div className="bg-white py-[50vh] relative">
           <button onClick={handleClose} className="ml-20 mb-10">
-            <Image src="/ModalClose.svg" width={50} height={3} alt="arrow" />
+            <Image src="./ModalClose.svg" width={50} height={3} alt="arrow" />
           </button>
           <div className="grid ml-36 mr-24">
             <h4 className="text-ml font-bold mb-5">Отклик на вакансию</h4>

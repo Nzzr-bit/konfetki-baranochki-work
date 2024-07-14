@@ -40,7 +40,7 @@ export const WhyUs = () => {
         <div>
           <div className="flex mb-16 items-start">
             <Image
-              src="/WhyUsIcon2.svg"
+              src="./WhyUsIcon2.svg"
               width={72}
               height={72}
               loading="lazy"
@@ -56,7 +56,7 @@ export const WhyUs = () => {
           </div>
           <div className="flex mb-16 items-start">
             <Image
-              src="/WhyUsIcon1.svg"
+              src="./WhyUsIcon1.svg"
               width={72}
               height={72}
               loading="lazy"
@@ -73,7 +73,7 @@ export const WhyUs = () => {
           </div>
           <div className="flex mb-16 items-start">
             <Image
-              src="/WhyUsIcon3.svg"
+              src="./WhyUsIcon3.svg"
               width={72}
               height={72}
               loading="lazy"

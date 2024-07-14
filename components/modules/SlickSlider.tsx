@@ -18,37 +18,37 @@ interface SlickSliderProps {
 
 const slides: Slide[] = [
   {
-    src: "/VacancyConf.png",
+    src: "./VacancyConf.png",
     alt: "кондитерское дело",
     title: "кондитерское дело",
     color: "bg-lime-100",
   },
   {
-    src: "/VacancyClient.png",
+    src: "./VacancyClient.png",
     alt: "специалисты клиентского сервиса",
     title: "специалисты клиентского сервиса",
     color: "bg-rose-100",
   },
   {
-    src: "/VacancyWorker.png",
+    src: "./VacancyWorker.png",
     alt: "Сотрудник кулинарии",
     title: "сотрудники кулинарии",
     color: "bg-teal-100",
   },
   {
-    src: "/VacancyOffice.png",
+    src: "./VacancyOffice.png",
     alt: "сотрудники офиса",
     title: "сотрудники офиса",
     color: "bg-pink-100",
   },
   {
-    src: "/VacancyChief.png",
+    src: "./VacancyChief.png",
     alt: "Повар",
     title: "повар",
     color: "bg-yellow-100",
   },
   {
-    src: "/VacancyDeliver.png",
+    src: "./VacancyDeliver.png",
     alt: "Вакансии доставки",
     title: "вакансии доставки",
     color: "bg-fuchsia-100",
