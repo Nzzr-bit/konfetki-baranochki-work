@@ -3,8 +3,12 @@ import Image from "next/image";
 import React from "react";
 import { useModal } from "./store/ModalContext";
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   const { showModal } = useModal();
+
+  const handleShowModal = () => {
+    showModal("form");
+  };
 
   return (
     <div className="container mx-auto flex mt-10 gap-x-8 mb-36 items-start">
@@ -20,7 +24,7 @@ export const Hero: React.FC = () => {
           заботой о вас!
         </p>
         <button
-          onClick={showModal}
+          onClick={handleShowModal}
           className="rounded-md text-base p-button bg-black text-white">
           Заполнить анкету
         </button>

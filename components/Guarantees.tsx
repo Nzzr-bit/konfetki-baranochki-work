@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export function Guarantees() {
+export const Guarantees = () => {
   return (
     <div className=" bg-main-red mb-36">
       <div className="container mx-auto">
@@ -98,4 +98,4 @@ export function Guarantees() {
       </div>
     </div>
   );
-}
+};

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function AnimateSale() {
+export const AnimateSale = () => {
   return (
     <div className="container mx-auto mb-36">
       <div className="relative flex overflow-x-hidden shadow-xl rounded-[60px]">
@@ -34,4 +34,4 @@ export function AnimateSale() {
       </p>
     </div>
   );
-}
+};

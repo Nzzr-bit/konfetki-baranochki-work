@@ -5,10 +5,15 @@ import { useModal } from "./store/ModalContext";
 
 export const WhyUs = () => {
   const { showModal } = useModal();
+
+  const handleShowModal = () => {
+    showModal("form");
+  };
+
   return (
-    <div className="container mx-auto mb-36">
-      <h2 className="text-xl font-bold mb-14 ">почему с нами</h2>
-      <div className="mx-auto grid grid-cols-2 gap-x-20 ">
+    <div className="container mx-auto mb-36 px-4">
+      <h2 className="text-xl font-bold mb-14">почему с нами</h2>
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10">
         <div>
           <h3 className="text-lg font-semibold italic mb-6">
             Наша главная <br />
@@ -27,9 +32,9 @@ export const WhyUs = () => {
             радостнее.
           </p>
           <button
-            className="rounded-md text-base p-button bg-black text-white"
-            onClick={showModal}>
-            Заполнить анекту
+            className="rounded-md text-base py-2 px-6 md:p-button bg-black text-white"
+            onClick={handleShowModal}>
+            Заполнить анкету
           </button>
         </div>
         <div>

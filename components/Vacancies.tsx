@@ -2,18 +2,19 @@
 import React, { useState } from "react";
 import SlickSlider from "./modules/SlickSlider";
 import ModalInfo from "./modules/ModalInfo";
+import { useModal } from "./store/ModalContext";
 
-export function Vacancies() {
-  const [modalVisible, setModalVisible] = useState(false);
+export const Vacancies = () => {
+  const { showModal, currentModal } = useModal();
   const [activeSlide, setActiveSlide] = useState(null);
 
   const handleButtonClick = (slide: any) => {
     setActiveSlide(slide);
-    setModalVisible(true);
+    showModal("info");
   };
 
   const closeModal = () => {
-    setModalVisible(false);
+    showModal("null");
   };
 
   return (
@@ -27,7 +28,9 @@ export function Vacancies() {
         </a>
       </p>
 
-      {modalVisible && <ModalInfo slide={activeSlide} onClose={closeModal} />}
+      {currentModal === "info" && (
+        <ModalInfo slide={activeSlide} onClose={closeModal} />
+      )}
     </div>
   );
-}
+};

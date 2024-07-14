@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { useModal } from "../store/ModalContext";
 
 interface Slide {
@@ -16,33 +16,61 @@ interface ModalInfoProps {
 }
 
 export const ModalInfo = ({ slide, onClose }: ModalInfoProps) => {
-  const { showModal } = useModal();
-  if (!slide) return null;
+  const { currentModal, showModal, hideModal } = useModal();
+  const [isClosing, setIsClosing] = useState(false);
+
+  if (!slide || (currentModal !== "info" && !isClosing)) return null;
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      hideModal();
+      setIsClosing(false);
+    }, 300);
+  };
+
+  const handleShowModal = () => {
+    handleClose();
+    setTimeout(() => {
+      showModal("form");
+    }, 300);
+  };
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-25 z-20 flex justify-end items-center"
-      onClick={onClose}>
-      <div className="w-[540px]" onClick={(e) => e.stopPropagation()}>
-        <div className="bg-white py-[50vh] relative">
-          <button onClick={onClose} className=" ">
-            <Image src="/ModalClose.svg" width={44} height={2} alt="arrow" />
-          </button>
-          <div className={`grid mx- ${slide.color}`}>
-            <h4 className="text-ml font-bold mb-5">{slide.title}</h4>
+      className={`fixed inset-0 bg-black bg-opacity-25 z-20 flex justify-end overflow-y-auto ${
+        isClosing ? "pointer-events-none" : ""
+      }`}
+      onClick={handleClose}>
+      <div
+        className={`w-[640px] ${
+          isClosing ? "slide-out-right" : "slide-in-right"
+        }`}
+        onClick={(e) => e.stopPropagation()}>
+        <div className="bg-white h-[100vh]">
+          <div className={`${slide.color} relative`}>
+            <h4 className="text-lg1 font-bold absolute left-8 top-24 w-44">
+              {slide.title}
+            </h4>
+            <button onClick={handleClose} className="absolute left-8 top-14">
+              <Image src="/ModalClose.svg" width={50} height={3} alt="arrow" />
+            </button>
             <Image
               src={slide.src}
-              width={340}
-              height={340}
+              width={320}
+              height={320}
               alt={slide.alt}
-              className=""
+              className="ml-72 pt-10"
             />
           </div>
-          <button
-            onClick={showModal}
-            className="rounded-md text-base p-button bg-black text-white mt-8">
-            Заполнить анкету
-          </button>
+          <div className="grid justify-center mt-4">
+            <div>Вы открыли вакансию {slide.title}</div>
+            <button
+              onClick={handleShowModal}
+              className="rounded-md text-base py-4 px-52 bg-black text-white mt-8">
+              Заполнить анкету
+            </button>
+          </div>
         </div>
       </div>
     </div>

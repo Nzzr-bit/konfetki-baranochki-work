@@ -2,8 +2,8 @@
 import { createContext, useState, ReactNode, FC, useContext } from "react";
 
 interface ModalContextType {
-  isModalVisible: boolean;
-  showModal: () => void;
+  currentModal: string | null;
+  showModal: (modalName: string) => void;
   hideModal: () => void;
 }
 
@@ -14,13 +14,13 @@ interface ModalProviderProps {
 }
 
 export const ModalProvider: FC<ModalProviderProps> = ({ children }) => {
-  const [isModalVisible, setModalVisible] = useState(false);
+  const [currentModal, setCurrentModal] = useState<string | null>(null);
 
-  const showModal = () => setModalVisible(true);
-  const hideModal = () => setModalVisible(false);
+  const showModal = (modalName: string) => setCurrentModal(modalName);
+  const hideModal = () => setCurrentModal(null);
 
   return (
-    <ModalContext.Provider value={{ isModalVisible, showModal, hideModal }}>
+    <ModalContext.Provider value={{ currentModal, showModal, hideModal }}>
       {children}
     </ModalContext.Provider>
   );

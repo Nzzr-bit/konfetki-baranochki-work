@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export function KnowUs() {
+export const KnowUs = () => {
   return (
     <div className="container mx-auto">
       <h2 className="text-ml font-semibold mb-16">ЗНАКОМЬСЯ С НАМИ</h2>
@@ -49,4 +49,4 @@ export function KnowUs() {
       </div>
     </div>
   );
-}
+};

@@ -68,6 +68,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
         spaceBetween={28}
         slidesPerView={4}
         loop={true}
+        autoplay={true}
         className="absolute right-0 top-0 w-[calc(100%+240px)]"
         modules={[Navigation]}
         onSlideChange={handleSlideChange}
