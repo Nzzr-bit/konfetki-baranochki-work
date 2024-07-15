@@ -10,11 +10,13 @@ const config: Config = {
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
     },
+
     fontSize: {
       xl: ["70px", "78px"],
       base: ["20px", "28px"],
       lg: ["48px", "64px"],
       s: ["18px", "28px"],
+      xs: ["16px", "20px"],
       m: ["24px", "32px"],
       lg1: ["40px", "53px"],
       xxl: ["96px", "100px"],

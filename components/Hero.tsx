@@ -13,7 +13,7 @@ export const Hero = () => {
   return (
     <div className="container mx-auto flex mt-10 gap-x-8 mb-36 items-start">
       <div className="">
-        <h1 className="text-xl font-bold">
+        <h1 className="text-xl  font-bold">
           Айда к нам! мы готовим <span className="text-main-red">успех,</span>{" "}
           выпекаем <span className="text-main-red">возможности!</span>
         </h1>
@@ -30,12 +30,12 @@ export const Hero = () => {
         </button>
       </div>
       <Image
-        src="./hero.png"
+        src="/hero.png"
         width={704}
         height={440}
         loading="lazy"
         alt="Айда к нам!"
-        className="object-contain"
+        className="object-contain w-full"
       />
     </div>
   );

@@ -53,7 +53,7 @@ export const ModalInfo = ({ slide, onClose }: ModalInfoProps) => {
               {slide.title}
             </h4>
             <button onClick={handleClose} className="absolute left-8 top-14">
-              <Image src="./ModalClose.svg" width={50} height={3} alt="arrow" />
+              <Image src="/ModalClose.svg" width={50} height={3} alt="arrow" />
             </button>
             <Image
               src={slide.src}
