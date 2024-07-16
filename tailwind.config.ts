@@ -33,6 +33,12 @@ const config: Config = {
       padding: "16px",
     },
     extend: {
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1000px",
+        xl: "1200px",
+      },
       boxShadow: {
         xl: "inset 2px 2px 25px 2px rgba(0, 0, 0, 0.20)",
       },

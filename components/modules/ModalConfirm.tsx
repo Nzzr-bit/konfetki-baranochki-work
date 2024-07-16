@@ -5,7 +5,7 @@ export const ModalConfirm = () => {
   return (
     <div>
       <Image
-        src="/iconSucsess.svg"
+        src="./iconSucsess.svg"
         width={100}
         height={100}
         alt="Sucsess"
@@ -15,7 +15,7 @@ export const ModalConfirm = () => {
       <p className="text-xs">
         Спасибо за заявку! В скором времени с вами свяжется наш менеджер.
       </p>
-      <button className="rounded-md text-base py-3 px-6 bg-black text-white mt-10">
+      <button className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:p-button bg-black text-white mt-10">
         Вернуться на сайт
       </button>
     </div>
