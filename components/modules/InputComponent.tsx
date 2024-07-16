@@ -15,6 +15,27 @@ export const InputComponent: React.FC<InputComponentProps> = ({
   register,
   error,
 }) => {
+  if (type === "phone") {
+    return (
+      <div className="relative mb-5">
+        <InputMask
+          mask="+7(999)-999-99-99"
+          maskChar=" "
+          className={`p-2 border-2 rounded-md w-full ${
+            error ? "border-red-500" : ""
+          }`}
+          placeholder={placeholder}
+          {...register}
+        />
+        {error && (
+          <span className="text-red-500 text-sm">
+            Поле обязательно для заполнения
+          </span>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="relative mb-5">
       <input

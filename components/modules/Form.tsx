@@ -86,7 +86,7 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
           error={errors.middleName}
         />
         <InputComponent
-          type="input"
+          type="phone"
           placeholder="Телефон*"
           register={register("phoneNumber", {
             required: true,
