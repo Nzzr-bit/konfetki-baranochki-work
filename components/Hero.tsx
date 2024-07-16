@@ -30,7 +30,7 @@ export const Hero = () => {
         </button>
       </div>
       <Image
-        src="/hero.png"
+        src="./hero.png"
         width={704}
         height={440}
         loading="lazy"

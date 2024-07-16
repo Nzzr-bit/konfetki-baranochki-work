@@ -13,7 +13,7 @@ interface IFormInput {
   lastName: string;
   firstName: string;
   middleName: string;
-  phoneNumber: string; // Изменено на string для валидации
+  phoneNumber: number;
   emailAddress: string;
   workExperience: string;
   whereHear: string;
@@ -86,7 +86,7 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
           error={errors.middleName}
         />
         <InputComponent
-          type="phone"
+          type="input"
           placeholder="Телефон*"
           register={register("phoneNumber", {
             required: true,

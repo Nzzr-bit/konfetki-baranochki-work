@@ -12,7 +12,7 @@ export const Guarantees = () => {
           <div className="md:flex md:flex-wrap justify-center">
             <div className="flex flex-col items-center mb-9 md:mb-16 md:w-1/3">
               <Image
-                src="/GuaranteesIcon6.svg"
+                src="./GuaranteesIcon6.svg"
                 width={70}
                 height={70}
                 loading="lazy"
@@ -26,7 +26,7 @@ export const Guarantees = () => {
             </div>
             <div className="flex flex-col items-center mb-9 md:mb-16 md:w-1/3">
               <Image
-                src="/GuaranteesIcon4.svg"
+                src="./GuaranteesIcon4.svg"
                 width={70}
                 height={70}
                 loading="lazy"
@@ -39,7 +39,7 @@ export const Guarantees = () => {
             </div>
             <div className="flex flex-col items-center mb-9 md:mb-16 md:w-1/3">
               <Image
-                src="/GuaranteesIcon2.svg"
+                src="./GuaranteesIcon2.svg"
                 width={70}
                 height={70}
                 loading="lazy"
@@ -54,7 +54,7 @@ export const Guarantees = () => {
           <div className="md:flex md:flex-wrap justify-center">
             <div className="flex flex-col items-center mb-9 md:w-1/3">
               <Image
-                src="/GuaranteesIcon3.svg"
+                src="./GuaranteesIcon3.svg"
                 width={70}
                 height={70}
                 loading="lazy"
@@ -67,7 +67,7 @@ export const Guarantees = () => {
             </div>
             <div className="flex flex-col items-center mb-9 md:w-1/3">
               <Image
-                src="/GuaranteesIcon5.svg"
+                src="./GuaranteesIcon5.svg"
                 width={70}
                 height={70}
                 loading="lazy"
@@ -80,7 +80,7 @@ export const Guarantees = () => {
             </div>
             <div className="flex flex-col items-center mb-9 md:w-1/3">
               <Image
-                src="/GuaranteesIcon1.svg"
+                src="./GuaranteesIcon1.svg"
                 width={70}
                 height={70}
                 loading="lazy"

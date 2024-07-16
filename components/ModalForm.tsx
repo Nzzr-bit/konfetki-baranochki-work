@@ -56,7 +56,7 @@ export const ModalForm = () => {
         onClick={(e) => e.stopPropagation()}>
         <div className="bg-white h-[100vh] relative ">
           <button onClick={handleClose} className="ml-3 lg:ml-20 mb-10 mt-10">
-            <Image src="/ModalClose.svg" width={50} height={3} alt="arrow" />
+            <Image src="./ModalClose.svg" width={50} height={3} alt="arrow" />
           </button>
           <div className="grid ml-3 lg:ml-36 mr-3 lg:mr-24 ">
             {isSuccess ? (
