@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   return (
-    <div className="container mx-auto flex-col lg:flex mt-10 lg:gap-x-8 mb-28 lg:mb-36 xl:mb-52 items-start">
+    <div className="container mx-auto lg:flex mt-10 lg:gap-x-8 mb-28 lg:mb-36 xl:mb-52 items-start">
       <div className="">
         <h1 className="text-lg1 md:text-lg xl:text-xl  font-bold">
           Айда к нам! мы готовим <span className="text-main-red">успех,</span>{" "}
