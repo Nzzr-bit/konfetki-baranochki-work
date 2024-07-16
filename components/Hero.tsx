@@ -17,7 +17,7 @@ export const Hero = () => {
           Айда к нам! мы готовим <span className="text-main-red">успех,</span>{" "}
           выпекаем <span className="text-main-red">возможности!</span>
         </h1>
-        <p className="text-xs md:text-base my-3 md:my-4">
+        <p className="text-xs xl:text-base my-3 md:my-4">
           {`Приглашаем на работу в любимую сеть кулинарий "Конфетки-
           Бараночки!" Это бренд с многолетней историей, который успело
           полюбить не одно поколение! Сохраняем традиции с 1956г. и динамично

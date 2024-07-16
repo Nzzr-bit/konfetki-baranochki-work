@@ -12,9 +12,9 @@ export const KnowUs = () => {
           alt="Знакомся с нами"
           width={949}
           height={560}
-          className="mr-2 xl:mr-8 relative "
+          className="mr-2 xl:mr-8 relative  lg:w-2/3 xl:w-auto "
         />
-        <div className="w-full mt-3 lg:mt-0">
+        <div className="w-full mt-3 lg:mt-0 flex flex-col justify-between">
           <Link
             className="mb-3 lg:mb-7  link-social w-full"
             href=" https://t.me/confetkibaranochki">
