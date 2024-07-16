@@ -129,16 +129,16 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
           register={register("whereHear", { required: false })}
           error={errors.whereHear}
         />
-        <div className="flex items-center">
+        <div className="flex items-center text-xs lg:text-s">
           <input
             className="mr-1"
             type="checkbox"
             {...register("consent", { required: true })}
           />
-          Согласен на
+          Согласен на 
           <Link
             href="https://kbsladosti.ru/policy/"
-            className="text-main-red underline">
+            className="text-main-red underline text-xs lg:text-s">
             обработку персональных данных
           </Link>
         </div>

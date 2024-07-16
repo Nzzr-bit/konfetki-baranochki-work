@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   return (
-    <div className="container mx-auto flex-c0l md:flex mt-10 md:gap-x-8 mb-28 md:mb-36 xl:mb-52 items-start">
+    <div className="container mx-auto flex-c0l lg:flex mt-10 lg:gap-x-8 mb-28 lg:mb-36 xl:mb-52 items-start">
       <div className="">
         <h1 className="text-lg1 md:text-lg xl:text-xl  font-bold">
           Айда к нам! мы готовим <span className="text-main-red">успех,</span>{" "}
@@ -35,7 +35,7 @@ export const Hero = () => {
         height={440}
         loading="lazy"
         alt="Айда к нам!"
-        className="object-contain w-full mt-6 md:mt-0"
+        className="object-contain w-full mt-6 md:mt-6 lg:mt-0 relative lg:h-64 xl:h-auto "
       />
     </div>
   );

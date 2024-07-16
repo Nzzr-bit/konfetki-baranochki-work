@@ -12,7 +12,7 @@ export const KnowUs = () => {
           alt="Знакомся с нами"
           width={949}
           height={560}
-          className="mr-2 xl:mr-8"
+          className="mr-2 xl:mr-8 relative "
         />
         <div className="w-full mt-3 lg:mt-0">
           <Link
@@ -23,21 +23,21 @@ export const KnowUs = () => {
               alt="Телеграмм"
               width={40}
               height={30}
-              className="mr-2 lg:mr-3"
+              className="mr-2"
             />
-            <p className="text-base xl:text-m">Telegram</p>
+            <p className="text-s xl:text-m">Telegram</p>
           </Link>
           <Link
-            className="mb-3 lg:mb-7 link-social w-full"
+            className="mb-3 xl:mb-7 link-social w-full"
             href="https://vk.com/confetkibaranochki">
             <Image
               src="./IconVK.svg"
               alt="Вконтакте"
               width={40}
               height={40}
-              className="mr-2 lg:mr-3"
+              className="mr-2 "
             />
-            <p className="text-base xl:text-m">ВКонтакте</p>
+            <p className="text-s xl:text-m">ВКонтакте</p>
           </Link>
           <Link
             className="  link-social w-full"
@@ -47,9 +47,9 @@ export const KnowUs = () => {
               alt="Одноклассники"
               width={30}
               height={30}
-              className="mr-2 lg:mr-3"
+              className="mr-2 "
             />
-            <p className="text-base xl:text-m">Одноклассники</p>
+            <p className="text-s xl:text-m">Одноклассники</p>
           </Link>
         </div>
       </div>
