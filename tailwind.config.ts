@@ -20,7 +20,7 @@ const config: Config = {
       m: ["24px", "32px"],
       lg1: ["40px", "53px"],
       xxl: ["96px", "100px"],
-      ml: ["30px", "28px"],
+      ml: ["30px", "36px"],
     },
     container: {
       screens: {

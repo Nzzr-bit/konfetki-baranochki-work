@@ -13,7 +13,7 @@ interface IFormInput {
   lastName: string;
   firstName: string;
   middleName: string;
-  phoneNumber: number;
+  phoneNumber: string; // Изменено на string для валидации
   emailAddress: string;
   workExperience: string;
   whereHear: string;
@@ -88,13 +88,18 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
         <InputComponent
           type="phone"
           placeholder="Телефон*"
-          register={register("phoneNumber", { required: true })}
+          register={register("phoneNumber", {
+            required: true,
+            pattern: /^\+7\(\d{3}\)-\d{3}-\d{2}-\d{2}$/,
+          })}
           error={errors.phoneNumber}
         />
         <InputComponent
           type="input"
           placeholder="Почта"
-          register={register("emailAddress", { required: false })}
+          register={register("emailAddress", {
+            required: false,
+          })}
           error={errors.emailAddress}
         />
         <p className="font-medium pb-2"> Есть опыт работы?</p>
@@ -130,7 +135,7 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
             type="checkbox"
             {...register("consent", { required: true })}
           />
-          Согласен на 
+          Согласен на
           <Link
             href="https://kbsladosti.ru/policy/"
             className="text-main-red underline">
@@ -143,7 +148,7 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
           </span>
         )}
         <input
-          className="rounded-md text-base font-semibold py-3 bg-black text-white mt-8"
+          className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:p-button bg-black text-white mt-8"
           type="submit"
           value="Заполнить анкету"
         />

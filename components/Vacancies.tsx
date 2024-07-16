@@ -18,10 +18,10 @@ export const Vacancies = () => {
   };
 
   return (
-    <div className="relative mb-36 overflow-hidden container mx-auto">
+    <div className="relative mb-28 md:mb-36 overflow-hidden container mx-auto">
       <SlickSlider onButtonClick={handleButtonClick} />
 
-      <p className="text-base pt-3 font-medium">
+      <p className="text-xs xl:text-base pt-3 font-medium">
         Полный перечень вакансий на 
         <a href="" className="text-main-red underline">
           hh.ru

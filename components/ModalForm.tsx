@@ -45,25 +45,27 @@ export const ModalForm = () => {
 
   return (
     <div
-      className={`fixed inset-0 bg-black bg-opacity-25 z-20 flex justify-end items-center ${
+      className={`fixed inset-0 bg-black bg-opacity-25 z-20 flex justify-end ${
         isClosing ? "pointer-events-none" : ""
       }`}
       onClick={handleClose}>
       <div
-        className={`w-[740px] ${
+        className={`w-full lg:w-[740px] ${
           isClosing ? "slide-out-right" : "slide-in-right"
         }`}
         onClick={(e) => e.stopPropagation()}>
         <div className="bg-white h-[100vh] relative ">
-          <button onClick={handleClose} className="ml-20 mb-10 mt-10">
+          <button onClick={handleClose} className="ml-3 lg:ml-20 mb-10 mt-10">
             <Image src="/ModalClose.svg" width={50} height={3} alt="arrow" />
           </button>
-          <div className="grid ml-36 mr-24 ">
+          <div className="grid ml-3 lg:ml-36 mr-3 lg:mr-24 ">
             {isSuccess ? (
               <ModalConfirm />
             ) : (
               <>
-                <h4 className="text-ml font-bold mb-5">Отклик на вакансию</h4>
+                <h4 className="text-m lg:text-ml font-bold mb-5">
+                  Отклик на вакансию
+                </h4>
                 <Form onSubmit={onSubmit} />
               </>
             )}

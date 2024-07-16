@@ -15,7 +15,7 @@ main {
 
 @layer components {
   .link-social {
-    @apply pb-20 pt-12 pl-8 bg-main-red flex hover:bg-main-red-active text-white text-ml font-semibold rounded-md items-center;
+    @apply py-8 lg:pb-20  lg:pt-12 pl-8 bg-main-red flex hover:bg-main-red-active text-white text-base xl:text-ml font-semibold rounded-md items-center;
   }
 }
 

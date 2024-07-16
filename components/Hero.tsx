@@ -11,21 +11,21 @@ export const Hero = () => {
   };
 
   return (
-    <div className="container mx-auto flex mt-10 gap-x-8 mb-36 items-start">
+    <div className="container mx-auto flex-c0l md:flex mt-10 md:gap-x-8 mb-28 md:mb-36 xl:mb-52 items-start">
       <div className="">
-        <h1 className="text-xl  font-bold">
+        <h1 className="text-lg1 md:text-lg xl:text-xl  font-bold">
           Айда к нам! мы готовим <span className="text-main-red">успех,</span>{" "}
           выпекаем <span className="text-main-red">возможности!</span>
         </h1>
-        <p className="text-base my-4">
+        <p className="text-xs md:text-base my-3 md:my-4">
           {`Приглашаем на работу в любимую сеть кулинарий "Конфетки-
           Бараночки!" Это бренд с многолетней историей, который успело
           полюбить не одно поколение! Сохраняем традиции с 1956г. и динамично
           развиваемся с заботой о вас!`}
         </p>
         <button
-          onClick={handleShowModal}
-          className="rounded-md text-base p-button bg-black text-white">
+          className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:p-button bg-black text-white font-semibold"
+          onClick={handleShowModal}>
           Заполнить анкету
         </button>
       </div>
@@ -35,7 +35,7 @@ export const Hero = () => {
         height={440}
         loading="lazy"
         alt="Айда к нам!"
-        className="object-contain w-full"
+        className="object-contain w-full mt-6 md:mt-0"
       />
     </div>
   );

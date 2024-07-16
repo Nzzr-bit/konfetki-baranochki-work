@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 
 interface Slide {
@@ -63,14 +63,25 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
   };
 
   return (
-    <div className="relative mb-1 -mr-60">
+    <div className="relative mb-1">
       <Swiper
         spaceBetween={28}
-        slidesPerView={4}
+        slidesPerView={1}
+        breakpoints={{
+          1000: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+        }}
         loop={true}
-        autoplay={true}
-        className="absolute right-0 top-0 w-[calc(100%+240px)]"
-        modules={[Navigation]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        className=""
+        modules={[Navigation, Autoplay]}
         onSlideChange={handleSlideChange}
         navigation={{
           nextEl: ".swiper-button-next",
@@ -92,7 +103,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
             </div>
           </SwiperSlide>
         ))}
-        <button className="swiper-button-next absolute top-1/2 right-[500px] z-10">
+        <button className="swiper-button-next absolute top-1/2 right-1 z-10">
           <Image
             src="/IconSliderArrow.svg"
             width={50}
@@ -103,7 +114,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
         </button>
       </Swiper>
       <button
-        className="rounded-md text-base p-button bg-main-red text-white mt-8"
+        className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:p-button bg-main-red text-white mt-8 font-semibold"
         onClick={() => onButtonClick(activeSlide)}>
         Заполнить анкету
       </button>
