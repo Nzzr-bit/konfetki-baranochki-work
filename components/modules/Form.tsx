@@ -143,7 +143,7 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
           </Link>
         </div>
         {errors.consent && (
-          <span className="text-red-500 text-sm">
+          <span className="text-red-500 text-xs lg:text-s">
             Подтвердите согласие на обработку персональных данных
           </span>
         )}
