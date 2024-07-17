@@ -89,7 +89,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
         }}>
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className={`${slide.color} relative`}>
+            <div className={`${slide.color} relative rounded-lg`}>
               <Image
                 src={slide.src}
                 width={460}

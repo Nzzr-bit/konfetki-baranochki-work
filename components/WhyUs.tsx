@@ -35,7 +35,7 @@ export const WhyUs = () => {
           </p>
         </div>
         <div>
-          <div className="flex mb-16 items-start">
+          <div className="flex mb-10 xl:mb-16 items-start">
             <Image
               src="./WhyUsIcon2.svg"
               width={72}
@@ -51,7 +51,7 @@ export const WhyUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex mb-16 items-start">
+          <div className="flex mb-10 xl:mb-16 items-start">
             <Image
               src="./WhyUsIcon1.svg"
               width={72}
