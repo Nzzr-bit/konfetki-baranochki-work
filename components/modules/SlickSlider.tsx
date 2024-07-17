@@ -105,7 +105,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
                 alt={slide.alt}
                 className="pt-28 lg:pt-32 xl:pt-36"
               />
-              <h4 className="absolute top-10 left-9 text-m font-bold">
+              <h4 className="absolute top-6 left-6 xl:top-10 xl:left-9 text-m font-bold">
                 {slide.title}
               </h4>
             </div>
