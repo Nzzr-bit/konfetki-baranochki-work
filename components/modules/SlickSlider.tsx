@@ -103,7 +103,6 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
                 width={460}
                 height={460}
                 alt={slide.alt}
-                loading="lazy"
                 className="pt-28 lg:pt-32 xl:pt-36"
               />
               <h4 className="absolute top-6 left-6 xl:top-10 xl:left-9 text-m font-bold">
@@ -122,7 +121,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
         </button>
       </Swiper>
       <button
-        className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:p-button bg-main-red text-white mt-8 font-semibold"
+        className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:px-16 xl:px-24 xxl:p-button bg-main-red text-white mt-8 font-semibold"
         onClick={() => onButtonClick(activeSlide)}>
         Заполнить анкету
       </button>

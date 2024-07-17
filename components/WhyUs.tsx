@@ -87,7 +87,7 @@ export const WhyUs = () => {
         </div>
       </div>
       <button
-        className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:p-button bg-black text-white font-semibold"
+        className="rounded-md text-xs xl:text-s py-3 w-full lg:w-auto lg:px-16 xl:px-24 xxl:p-button bg-black text-white font-semibold"
         onClick={handleShowModal}>
         Заполнить анкету
       </button>
