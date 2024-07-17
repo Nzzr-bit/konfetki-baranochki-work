@@ -18,19 +18,21 @@ export const Vacancies = () => {
   };
 
   return (
-    <div className="relative mb-28 md:mb-36 overflow-hidden container mx-auto">
-      <SlickSlider onButtonClick={handleButtonClick} />
+    <div className="overflow-hidden w-full">
+      <div className="relative mb-28 md:mb-36  container mx-auto">
+        <SlickSlider onButtonClick={handleButtonClick} />
 
-      <p className="text-xl:text-base pt-3 font-medium">
-        Полный перечень вакансий на 
-        <a href="" className="text-main-red underline">
-          hh.ru
-        </a>
-      </p>
+        <p className="text-xl:text-base pt-3 font-medium">
+          Полный перечень вакансий на 
+          <a href="" className="text-main-red underline">
+            hh.ru
+          </a>
+        </p>
 
-      {currentModal === "info" && (
-        <ModalInfo slide={activeSlide} onClose={closeModal} />
-      )}
+        {currentModal === "info" && (
+          <ModalInfo slide={activeSlide} onClose={closeModal} />
+        )}
+      </div>
     </div>
   );
 };
