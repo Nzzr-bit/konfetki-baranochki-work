@@ -15,7 +15,7 @@ export const WhyUs = () => {
       <h2 className="text-lg xl:text-xl font-bold mb-5 xl:mb-14">
         почему с нами
       </h2>
-      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-20 xl:gap-y-10">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-20 xl:gap-y-10">
         <div>
           <h3 className="text-ml xl:text-lg font-semibold italic mb-6">
             Наша главная <br />

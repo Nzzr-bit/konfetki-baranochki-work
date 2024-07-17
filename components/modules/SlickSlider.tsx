@@ -63,7 +63,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
   };
 
   return (
-    <div className="relative mb-1">
+    <div className=" mb-1">
       <Swiper
         spaceBetween={28}
         slidesPerView={1}

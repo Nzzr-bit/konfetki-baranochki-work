@@ -48,7 +48,7 @@ export const ModalInfo = ({ slide, onClose }: ModalInfoProps) => {
         }`}
         onClick={(e) => e.stopPropagation()}>
         <div className="bg-white h-full">
-          <div className={`${slide.color} relative`}>
+          <div className={`${slide.color} relative pt-10`}>
             <h4 className="text-ml lg:text-lg1 font-bold absolute left-1 top-10 sm:left-4 sm:top-16 lg:left-8 lg:top-24 w-44">
               {slide.title}
             </h4>
@@ -57,7 +57,7 @@ export const ModalInfo = ({ slide, onClose }: ModalInfoProps) => {
               onClick={handleClose}>
               <Image src="./ModalClose.svg" width={50} height={3} alt="arrow" />
             </button>
-            <div className="relative h-64 sm:h-80 lg:h-96">
+            <div className="relative h-64 sm:h-80">
               <Image
                 src={slide.src}
                 width={320}

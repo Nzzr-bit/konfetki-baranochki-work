@@ -135,12 +135,14 @@ const Form: React.FC<FormComponentProps> = ({ onSubmit }) => {
             type="checkbox"
             {...register("consent", { required: true })}
           />
-          Согласен на 
-          <Link
-            href="https://kbsladosti.ru/policy/"
-            className="text-main-red underline text-xs lg:text-s">
-            обработку персональных данных
-          </Link>
+          <p>
+            Согласен на 
+            <Link
+              href="https://kbsladosti.ru/policy/"
+              className="text-main-red underline text-xs lg:text-s">
+              обработку персональных данных
+            </Link>
+          </p>
         </div>
         {errors.consent && (
           <span className="text-red-500 text-xs lg:text-s">

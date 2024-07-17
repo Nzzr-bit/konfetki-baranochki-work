@@ -27,7 +27,7 @@ const config: Config = {
         sm: "100%",
         md: "688px",
         lg: "928px",
-        xl: "1210px",
+        xl: "1200px",
         "2xl": "1408px",
       },
       padding: "16px",
@@ -38,6 +38,7 @@ const config: Config = {
         md: "768px",
         lg: "1000px",
         xl: "1200px",
+        xxl: "1400px",
       },
       boxShadow: {
         xl: "inset 2px 2px 25px 2px rgba(0, 0, 0, 0.20)",

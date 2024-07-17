@@ -28,7 +28,7 @@ export const InputComponent: React.FC<InputComponentProps> = ({
           {...register}
         />
         {error && (
-          <span className="text-red-500 text-sm">
+          <span className="text-red-500 text-xs lg:text-s">
             Поле обязательно для заполнения
           </span>
         )}
@@ -47,7 +47,7 @@ export const InputComponent: React.FC<InputComponentProps> = ({
         {...register}
       />
       {error && (
-        <span className="text-red-500 text-sm">
+        <span className="text-red-500 text-xs lg:text-s">
           Поле обязательно для заполнения
         </span>
       )}
