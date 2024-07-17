@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { lazy, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -103,6 +103,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
                 width={460}
                 height={460}
                 alt={slide.alt}
+                loading="lazy"
                 className="pt-28 lg:pt-32 xl:pt-36"
               />
               <h4 className="absolute top-6 left-6 xl:top-10 xl:left-9 text-m font-bold">
