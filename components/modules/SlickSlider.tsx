@@ -111,7 +111,7 @@ function SlickSlider({ onButtonClick }: SlickSliderProps) {
             </div>
           </SwiperSlide>
         ))}
-        <button className="swiper-button-next absolute top-1/2 left-[88%] lg:left-[78%] xxl:left-[72%] z-10">
+        <button className="swiper-button-next absolute top-1/2 left-[88%] lg:left-[78%] xl:left-[85%] xxl:left-[82%] z-10">
           <Image
             src="./iconSliderArrow.svg"
             width={50}
